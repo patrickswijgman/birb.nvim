@@ -4,7 +4,7 @@ A tiny plugin that wires up Neovim's built-in treesitter.
 It registers the filetype-to-language mappings Neovim does not include by default.
 And starts treesitter automatically on every buffer.
 
-Birb, because they are actual treesitters.
+Birb, because they are literally treesitters.
 
 ## Requirements
 
