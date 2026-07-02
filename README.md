@@ -46,11 +46,11 @@ require("birb").setup({
 })
 ```
 
-If your parsers live outside the plugin (e.g. on Nix), set `path` to the
+If your treesitter parser (\*.so) and query (\*.scm) files live outside the plugin (e.g. on Nix), set `path` to the
 directory containing them:
 
 ```lua
 require("birb").setup({
-  path = "/path/to/parsers",
+  path = "/path/to/parsers_and_queries",
 })
 ```
