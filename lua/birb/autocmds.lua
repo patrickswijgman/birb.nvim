@@ -1,5 +1,6 @@
 local M = {}
 
+---Start treesitter, fail gracefully if treesitter does not have a parser for the filetype.
 local function start(ev)
   pcall(vim.treesitter.start, ev.buf)
 end
@@ -7,7 +8,6 @@ end
 ---Register autocommands.
 function M.setup()
   local group = vim.api.nvim_create_augroup("Birb", { clear = true })
-
   vim.api.nvim_create_autocmd("FileType", { callback = start, desc = "Start treesitter", group = group })
 end
 
