@@ -23,7 +23,7 @@ check("registers jsx -> javascript", vim.treesitter.language.get_lang("jsx") == 
 check("registers svg -> xml", vim.treesitter.language.get_lang("svg") == "xml")
 
 -- The FileType autocmd that starts treesitter must exist.
-check("creates the Treesitter FileType autocmd", #vim.api.nvim_get_autocmds({ group = "Treesitter", event = "FileType" }) > 0)
+check("creates the Treesitter FileType autocmd", #vim.api.nvim_get_autocmds({ group = "Birb", event = "FileType" }) > 0)
 
 print(("\n%d failed"):format(failures))
 vim.cmd(failures == 0 and "qa!" or "cq!")
