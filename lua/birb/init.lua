@@ -4,9 +4,7 @@ local options = require("birb.options")
 
 local M = {}
 
----Initialize plugin.
----
----@param user_opts? Opts user options
+---@param user_opts? Opts
 function M.setup(user_opts)
   config.setup(user_opts)
   options.setup()

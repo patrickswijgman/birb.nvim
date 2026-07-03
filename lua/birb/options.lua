@@ -2,7 +2,6 @@ local config = require("birb.config")
 
 local M = {}
 
----Set options.
 function M.setup()
   if config.opts.use_folds then
     vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"

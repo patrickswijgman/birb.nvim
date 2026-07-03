@@ -1,7 +1,7 @@
 ---@class Opts
----@field use_folds? boolean register treesitter as fold expression
----@field auto_open_folds? boolean open all folds automatically
----@field path? string path to treesitter parsers and queries
+---@field use_folds? boolean
+---@field auto_open_folds? boolean
+---@field path? string
 
 local M = {}
 
@@ -12,12 +12,9 @@ local defaults = {
   path = nil,
 }
 
----Resolved options, populated by `setup()`.
 ---@type Opts
 M.opts = defaults
 
----Merge user options over the defaults.
----
 ---@param user_opts? Opts
 function M.setup(user_opts)
   M.opts = vim.tbl_deep_extend("force", {}, defaults, user_opts or {})
