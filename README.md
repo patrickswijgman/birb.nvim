@@ -8,7 +8,7 @@ Named "birb" because birds sit in trees, they're literal treesitters!
 
 ## Requirements
 
-- Neovim 0.11+ (uses `vim.treesitter.start`)
+- Neovim 0.11+
 - Either treesitter parsers and queries installed manually or via [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ## Install
