@@ -1,6 +1,6 @@
 # birb.nvim
 
-A tiny plugin that wires up Neovim's built-in treesitter.
+A tiny plugin that wires up Neovim's builtin treesitter.
 
 Named "birb" because birds sit in trees, they're literal treesitters!
 
