@@ -1,6 +1,7 @@
 local M = {}
 
 ---pcall: treesitter has no parser for every filetype; fail silently when absent.
+---@param ev vim.api.keyset.create_autocmd.callback_args
 local function start(ev)
   pcall(vim.treesitter.start, ev.buf)
 end

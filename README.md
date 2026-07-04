@@ -1,10 +1,14 @@
 # birb.nvim
 
 A tiny plugin that wires up Neovim's built-in treesitter.
-It registers the filetype-to-language mappings Neovim does not include by default.
-And starts treesitter automatically on every buffer.
 
 Named "birb" because birds sit in trees, they're literal treesitters!
+
+## Features
+
+- Start treesitter automatically for filetypes with a parser
+- Automatically registers common parsers for filetypes that Neovim doesn't include by default (e.g. `tsx` parser for `typescriptreact` filetype)
+- Use treesitter for folds
 
 ## Requirements
 
