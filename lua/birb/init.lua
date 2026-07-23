@@ -4,7 +4,7 @@ local options = require("birb.options")
 
 local M = {}
 
----@param user_opts? ConfigOpts
+---@param user_opts? birb.Config
 function M.setup(user_opts)
   config.setup(user_opts)
   options.setup()
