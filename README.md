@@ -1,4 +1,4 @@
-# birb.nvim
+# 🐦 birb.nvim
 
 A tiny plugin that wires up Neovim's builtin treesitter.
 
