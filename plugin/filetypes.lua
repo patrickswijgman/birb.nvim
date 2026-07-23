@@ -1,5 +1,3 @@
--- Map each treesitter language to the Neovim filetypes that should use its
--- parser. Neovim only auto-detects a subset of these, so register the rest.
 local filetypes = {
   angular = { "htmlangular" },
   bash = { "sh" },
